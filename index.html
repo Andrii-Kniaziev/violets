@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Blank Index.html File</title>
+    <meta name="description" content="Ths is an Index.html file">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<a class="button" href="#" style="--color: #ff1867;">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    Клікни
+</a>
+<div class="text">
+    <div class="typewriter">
+        <h1>Фіалки для Наталки &#128526;</h1>
+    </div>
+</div>
+<div class="flower">
+    <div class="f-wrapper">
+        <div class="flower__line"></div>
+        <div class="f">
+            <div class="flower__leaf flower__leaf--1"></div>
+            <div class="flower__leaf flower__leaf--2"></div>
+            <div class="flower__leaf flower__leaf--3"></div>
+            <div class="flower__leaf flower__leaf--4"></div>
+            <div class="flower__leaf flower__leaf--5"></div>
+            <div class="flower__leaf flower__leaf--6"></div>
+            <div class="flower__leaf flower__leaf--7"></div>
+            <div class="flower__leaf flower__leaf--8 flower__fall-down--yellow"></div>
+        </div>
+    </div>
+
+    <div class="f-wrapper f-wrapper--2">
+        <div class="flower__line"></div>
+        <div class="f">
+            <div class="flower__leaf flower__leaf--1"></div>
+            <div class="flower__leaf flower__leaf--2"></div>
+            <div class="flower__leaf flower__leaf--3"></div>
+            <div class="flower__leaf flower__leaf--4"></div>
+            <div class="flower__leaf flower__leaf--5"></div>
+            <div class="flower__leaf flower__leaf--6"></div>
+            <div class="flower__leaf flower__leaf--7"></div>
+            <div class="flower__leaf flower__leaf--8 flower__fall-down--pink"></div>
+        </div>
+    </div>
+
+    <div class="f-wrapper f-wrapper--3">
+        <div class="flower__line"></div>
+        <div class="f">
+            <div class="flower__leaf flower__leaf--1"></div>
+            <div class="flower__leaf flower__leaf--2"></div>
+            <div class="flower__leaf flower__leaf--3"></div>
+            <div class="flower__leaf flower__leaf--4"></div>
+            <div class="flower__leaf flower__leaf--5"></div>
+            <div class="flower__leaf flower__leaf--6"></div>
+            <div class="flower__leaf flower__leaf--7"></div>
+            <div class="flower__leaf flower__leaf--8 flower__fall-down--purple"></div>
+        </div>
+    </div>
+    <div class="flower__glass"></div>
+</div>
+</body>
+<script>
+    const button = document.querySelector('.button');
+    const flower = document.querySelector('.flower');
+    const text = document.querySelector('.text');
+    const body = document.body;
+
+    button.addEventListener('click', () => {
+        button.style.display = 'none';
+        text.style.display = 'block'
+        body.style.alignItems = 'flex-end'
+        flower.style.display = 'inline';
+    });
+</script>
+</html>
